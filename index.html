@@ -3,9 +3,9 @@
 <title>W3.CSS Template</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="./w3resources/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.css">
 <style>
     body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     .w3-row-padding img {margin-bottom: 12px}
@@ -15,6 +15,34 @@
         background-size: cover;
         background-image: url('./w3images/hmahini.jpg');
         min-height: 100%;
+    }
+    .my-row-with-image-and-date:after{
+        content: "";
+        display: table;
+        clear: both;
+    }
+    .my-column-image{
+        display: inline-block;
+        vertical-align: middle;
+        float:left;
+        text-align: center;
+        width: 10%;
+    }
+    .my-column-content{
+        float: left;
+        text-align: center;
+        width: 80%;
+    }
+    .my-column-date{
+        display: inline-block;
+        vertical-align: middle;
+        float: left;
+        transform: rotateZ(-90deg);
+        width: 10%;
+        font-size: 200%;
+    }
+    .my-hr-seprator{
+        border: 5px solid gray;
     }
 </style>
 <body>
@@ -57,21 +85,67 @@
 
     <!-- Education Section -->
     <div class="w3-padding-32 w3-content" id="education">
-        <h2 class="w3-text-grey">Education</h2>
+        <h2 class="w3-text-grey"><i class="fas fa-graduation-cap" style="margin:1%;"></i>Education</h2>
         <hr class="w3-opacity">
-
-        <!-- Grid for photos -->
-        <div class="w3-row-padding" style="margin:0 -16px">
-            <div class="w3-half">
-                <p><i class="fa fa-graduation-cap fa-fw w3-margin-right w3-large w3-text-black"></i>Ph.D</p>
+        <!-- PhD -->
+        <div class ="my-row-with-image-and-date" id="phd">
+            <div class="my-column-image">
+                <img style="margin: auto;" src="./w3images/iau.png" alt="IAU" width="70%">
             </div>
-
-            <div class="w3-half">
-
+            <div class="my-column-content">
+                <h4 class="w3-text-gray">Islamic Azad University- Science & Research branch (SRBIAU)</h4>
+                <h3 class="w3-text-black">Ph.D. in Computer Software Systems Engineering</h3>
             </div>
-            <!-- End photo grid -->
+            <div class="my-column-date">
+                <p class="w3-text-black">2016</p>
+            </div>
         </div>
-        <!-- End Education Section -->
+        <div>
+            <p><i class="fas fa-book-open" style="margin:1%;color:gray;"></i>Dissertation: <q>Game Theory Approach to Resource Allocation in Peer to Peer Video
+                Streaming</q><br>
+                <i class="fas fa-user" style="margin:1%;color:gray;"></i>Supervisor: Dr. Mehdi Dehghan Takht Fooladi<br>
+                <i class="fas fa-users" style="margin:1%;color:gray;"></i>Advisors: Dr. Hamidreza Navidi and Dr. Amir Masoud Rahmani<br>
+                <i class="fas fa-graduation-cap" style="margin:1%;color:gray;"></i>GPA: 19.08 of 20</p>
+        </div>
+        <hr class="my-hr-seprator">
+        <!-- MEng -->
+        <div class ="my-row-with-image-and-date" id="meng">
+            <div class="my-column-image">
+                <img style="margin: auto;" src="./w3images/iust.jpg" alt="IUST" width="100%">
+            </div>
+            <div class="my-column-content">
+                <h4 class="w3-text-gray">Iran University of Science and Technology (IUST)</h4>
+                <h3 class="w3-text-black">M.Eng. in Information Technology – Secure Communications</h3>
+            </div>
+            <div class="my-column-date">
+                <p class="w3-text-black">2010</p>
+            </div>
+        </div>
+        <div>
+            <p><i class="fas fa-book-open" style="margin:1%;color:gray;"></i>Thesis: <q>A Scalable IP Lookup Scheme in Internet Routers</q><br>
+                <i class="fas fa-user" style="margin:1%;color:gray;"></i>Supervisor:  Dr. Reza Berangi<br>
+                <i class="fas fa-graduation-cap" style="margin:1%;color:gray;"></i>GPA: 16.03 of 20</p>
+        </div>
+        <hr class="my-hr-seprator">
+        <!-- BEng -->
+        <div class ="my-row-with-image-and-date" id="beng">
+            <div class="my-column-image">
+                <img style="margin: auto;" src="./w3images/iust.jpg" alt="IUST" width="100%">
+            </div>
+            <div class="my-column-content">
+                <h4 class="w3-text-gray">Iran University of Science and Technology (IUST)</h4>
+                <h3 class="w3-text-black">B.Eng. in Computer Software Engineering</h3>
+            </div>
+            <div class="my-column-date">
+                <p class="w3-text-black">2006</p>
+            </div>
+        </div>
+        <div>
+            <p><i class="fas fa-book-open" style="margin:1%;color:gray;"></i>Thesis: <q>Blur Identification in Linear Motion-Blurred Images using Artificial Neural Networks</q><br>
+                <i class="fas fa-user" style="margin:1%;color:gray;"></i>Supervisor: Dr. Mohsen Ebrahimi Moghaddam<br>
+                <i class="fas fa-graduation-cap" style="margin:1%;color:gray;"></i>GPA: 16.72 of 20</p>
+        </div>
+    <!-- End Education Section -->
     </div>
 
     <!-- Footer -->
