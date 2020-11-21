@@ -16,47 +16,17 @@
         background-image: url('./w3images/hmahini.jpg');
         min-height: 100%;
     }
-    .my-row-with-image-and-date:after{
-        content: "";
-        display: table;
-        clear: both;
-    }
-    .my-column-image{
-        display: inline-block;
-        vertical-align: middle;
-        float:left;
-        text-align: center;
-        width: 10%;
-        margin: auto;
-    }
-    .my-column-content{
-        display: inline-block;
-        vertical-align: middle;
-        float: left;
-        text-align: center;
-        width: 80%;
-    }
-    .my-column-date{
-        display: inline-block;
-        vertical-align: middle;
-        float: left;
-        width: 10%;
-        font-size: 200%;
-        text-align: center;
-        margin: auto;
-    }
-    .my-hr-seprator{
-        border: 5px solid gray;
-    }
 </style>
 <body>
 
 <!-- Sidebar with image -->
+
 <nav class="w3-sidebar w3-hide-medium w3-hide-small" style="width:40%">
     <div class="bgimg"></div>
 </nav>
 
 <!-- Hidden Sidebar (reveals when clicked on menu icon)-->
+<!--
 <nav class="w3-sidebar w3-black w3-animate-right w3-xxlarge" style="display:none;padding-top:150px;right:0;z-index:2" id="mySidebar">
     <a href="javascript:void(0)" onclick="closeNav()" class="w3-button w3-black w3-xxxlarge w3-display-topright" style="padding:0 12px;">
         <i class="fa fa-remove"></i>
@@ -68,12 +38,12 @@
         <a href="#awards" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Awards</a>
     </div>
 </nav>
-
+-->
 <!-- Page Content -->
 <div class="w3-main w3-padding-large" style="margin-left:40%">
 
     <!-- Menu icon to open sidebar -->
-    <span class="w3-button w3-top w3-white w3-xxlarge w3-text-grey w3-hover-text-black" style="width:auto;right:0;" onclick="openNav()"><i class="fa fa-bars"></i></span>
+    <!--<span class="w3-button w3-top w3-white w3-xxlarge w3-text-grey w3-hover-text-black" style="width:auto;right:0;" onclick="openNav()"><i class="fa fa-bars"></i></span>-->
 
     <!-- Header -->
     <header class="w3-container w3-center" style="padding:128px 16px" id="home">
@@ -86,174 +56,6 @@
             <a href="cv.pdf" style="text-decoration:none;" download><i class="fa fa-download"></i> Download Resume</a>
         </button>
     </header>
-
-    <!-- Education Section -->
-    <div class="w3-padding-32 w3-content" id="education">
-        <h2 class="w3-text-grey"><i class="fas fa-graduation-cap" style="margin:1%;"></i>Education</h2>
-        <hr class="w3-opacity">
-        <!-- PhD -->
-        <div class ="my-row-with-image-and-date" id="phd">
-            <div class="my-column-image">
-                <img style="margin: auto;" src="./w3images/iau.png" alt="IAU" width="70%">
-            </div>
-            <div class="my-column-content">
-                <h4 class="w3-text-gray">Islamic Azad University- Science & Research branch (SRBIAU)</h4>
-                <h3 class="w3-text-black">Ph.D. in Computer Software Systems Engineering</h3>
-            </div>
-            <div class="my-column-date">
-                <p class="w3-text-black">2016</p>
-            </div>
-        </div>
-        <div>
-            <p><i class="fas fa-book-open" style="margin:1%;color:gray;"></i>Dissertation: <q>Game Theory Approach to Resource Allocation in Peer to Peer Video
-                Streaming</q><br>
-                <i class="fas fa-user" style="margin:1%;color:gray;"></i>Supervisor: Dr. Mehdi Dehghan Takht Fooladi<br>
-                <i class="fas fa-users" style="margin:1%;color:gray;"></i>Advisors: Dr. Hamidreza Navidi and Dr. Amir Masoud Rahmani<br>
-                <!--<i class="fas fa-graduation-cap" style="margin:1%;color:gray;"></i>GPA: 19.08 of 20</p>-->
-        </div>
-        <hr class="my-hr-seprator">
-        <!-- MEng -->
-        <div class ="my-row-with-image-and-date" id="meng">
-            <div class="my-column-image">
-                <img style="margin: auto;" src="./w3images/iust.jpg" alt="IUST" width="100%">
-            </div>
-            <div class="my-column-content">
-                <h4 class="w3-text-gray">Iran University of Science and Technology (IUST)</h4>
-                <h3 class="w3-text-black">M.Eng. in Information Technology – Secure Communications</h3>
-            </div>
-            <div class="my-column-date">
-                <p class="w3-text-black">2010</p>
-            </div>
-        </div>
-        <div>
-            <p><i class="fas fa-book-open" style="margin:1%;color:gray;"></i>Thesis: <q>A Scalable IP Lookup Scheme in Internet Routers</q><br>
-                <i class="fas fa-user" style="margin:1%;color:gray;"></i>Supervisor:  Dr. Reza Berangi<br>
-                <!--<i class="fas fa-graduation-cap" style="margin:1%;color:gray;"></i>GPA: 16.03 of 20</p>-->
-        </div>
-        <hr class="my-hr-seprator">
-        <!-- BEng -->
-        <div class ="my-row-with-image-and-date" id="beng">
-            <div class="my-column-image">
-                <img style="margin: auto;" src="./w3images/iust.jpg" alt="IUST" width="100%">
-            </div>
-            <div class="my-column-content">
-                <h4 class="w3-text-gray">Iran University of Science and Technology (IUST)</h4>
-                <h3 class="w3-text-black">B.Eng. in Computer Software Engineering</h3>
-            </div>
-            <div class="my-column-date">
-                <p class="w3-text-black">2006</p>
-            </div>
-        </div>
-        <div>
-            <p><i class="fas fa-book-open" style="margin:1%;color:gray;"></i>Thesis: <q>Blur Identification in Linear Motion-Blurred Images using Artificial Neural Networks</q><br>
-                <i class="fas fa-user" style="margin:1%;color:gray;"></i>Supervisor: Dr. Mohsen Ebrahimi Moghaddam<br>
-                <!--<i class="fas fa-graduation-cap" style="margin:1%;color:gray;"></i>GPA: 16.72 of 20</p>-->
-        </div>
-    <!-- End Education Section -->
-    </div>
-    <!-- Employment Section -->
-    <div class="w3-padding-32 w3-content" id="employment">
-        <h2 class="w3-text-grey"><i class="fas fa-briefcase" style="margin:1%;"></i>Employment</h2>
-        <hr class="w3-opacity">
-        <ul>
-            <li>
-                <b>Islamic Azad University – Gorgan branch</b>
-                <ul>
-                    <li>Academic Staff (Assistant Professor) (January 2011 – Current)</li>
-                    <li>Director of Information and Communication Technology office (August 2015 – May 2016)</li>
-                    <li>Director of Information and Communication Technology office (July 2011 – January 2013)</li>
-                </ul>
-            <li>
-                <b>SAMA College – Gorgan branch</b>
-                <ul>
-                    <li>Head of Computer Engineering Department (March 2009 – July 2011)</li>
-                </ul>
-            </li>
-            <li>
-                <b>UAST – Gorgan Khane Kargar Center</b>
-                <ul>
-                    <li>Head of Industry Department (July 2008 – December 2008)</li>
-                    <li>Deputy of Research and Technology (July 2008 – December 2008)</li>
-                </ul>
-            </li>
-            <li>
-                <b>Iran University of Science and Technology (IUST) – eLearning Center</b>
-                <ul>
-                    <li>Editor of Operating Systems Course (October 2006 – May 2007)</li>
-                </ul>
-            </li>
-            <li>
-                <b>Booria CAD, CAM Systems Corporation</b>
-                <ul>
-                    <li>Programmer (June 2003 – September 2003)</li>
-                </ul>
-            </li>
-            <li>
-                <b>SATER Computer Systems Development Corporation</b>
-                <ul>
-                    <li>Programmer and Project Manager (July 2005 – March 2007)</li>
-                </ul>
-            </li>
-        </ul>
-    <!-- End Employment Section -->
-    </div>
-    <!-- Awards Section -->
-    <div class="w3-padding-32 w3-content" id="awards">
-        <h2 class="w3-text-grey"><i class="fas fa-award" style="margin:1%;"></i>Awards</h2>
-        <hr class="w3-opacity">
-        <div class="my-row-with-image-and-date">
-            <div class="my-column-image">
-                <img style="margin: auto;" src="./w3images/NSkill.jpg" alt="National Skill Competitions" width="90%">
-            </div>
-            <div class="my-column-content">
-                <h4 class="w3-text-gray">Second National Skills Olympiad (Provincial stage)</h4>
-                <h3 class="w3-text-black">1<sup>th</sup> place in the field of programming</h3>
-            </div>
-            <div class="my-column-date">
-                <p class="w3-text-black" style="font-size: 80%">May 2002</p>
-            </div>
-        </div>
-        <div class="my-row-with-image-and-date">
-            <div class="my-column-image">
-                <img style="margin: auto;" src="./w3images/NSkill.jpg" alt="National Skill Competitions" width="90%">
-            </div>
-            <div class="my-column-content">
-                <h4 class="w3-text-gray">Second National Skills Olympiad (National stage)</h4>
-                <h3 class="w3-text-black">4<sup>th</sup> place in the field of programming </h3>
-            </div>
-            <div class="my-column-date">
-                <p class="w3-text-black" style="font-size: 80%">June 2002</p>
-            </div>
-        </div>
-        <div class="my-row-with-image-and-date">
-            <div class="my-column-image">
-                <img style="margin: auto;" src="./w3images/acm.png" alt="ACM" width="100%">
-            </div>
-            <div class="my-column-content">
-                <h4 class="w3-text-gray">Test Matches ACM northern region of Iran</h4>
-                <h3 class="w3-text-black">2<sup>th</sup> place</h3>
-            </div>
-            <div class="my-column-date">
-                <p class="w3-text-black" style="font-size: 80%">May 2004</p>
-            </div>
-        </div>
-    <!-- End Awards Section -->
-    </div>
-    <!-- Footer -->
-    <footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge" style="margin:-24px">
-        <i class="fa fa-facebook-official w3-hover-opacity"></i>
-        <i class="fa fa-instagram w3-hover-opacity"></i>
-        <i class="fa fa-snapchat w3-hover-opacity"></i>
-        <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-        <i class="fa fa-twitter w3-hover-opacity"></i>
-        <i class="fa fa-linkedin w3-hover-opacity"></i>
-        <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
-        <!-- End footer -->
-    </footer>
-
-    <!-- END PAGE CONTENT -->
-</div>
-
 <script>
     // Open and close sidebar
     function openNav() {
@@ -265,6 +67,5 @@
         document.getElementById("mySidebar").style.display = "none";
     }
 </script>
-
 </body>
 </html>
